@@ -15,7 +15,7 @@ func multiply(poly1 []int, poly2 []int) []int {
 	result := make([]int, len(poly1)+len(poly2))
 	for i, coefficient := range poly1 {
 		for j, coefficient2 := range poly2 {
-			result[i+j] = coefficient * coefficient2
+			result[i+j] += coefficient * coefficient2
 		}
 	}
 	return result
